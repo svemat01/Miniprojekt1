@@ -134,29 +134,21 @@ article table thead tr {
     color: black;
 }
 
-article table tbody {
-
-    border-color: grey;
-    border: 5px solid greenyellow;
+article table {
+    text-align: left;
 }
 
-article table tr:nth-child(even) {
-    background-color: #CCC;
-}
-/*
-article table tbody tr {
-    border-bottom: 1px solid #dddddd;
-}
+article table tr {
+    background-color: white;
 
-article table tbody tr:nth-of-type(even) {
-    background-color: grey;
+}
+article table {
+    background-color: lightgrey;
 }
 
-article table tbody tr:last-of-type {
-    border-bottom: 2px solid #009879;
-} */
-
-/* https://dev.to/dcodeyt/creating-beautiful-html-tables-with-css-428l */
+article table tbody tr:nth-child(odd) {
+    background-color: lightgray;
+}
 
 article table th,
 article table td {
