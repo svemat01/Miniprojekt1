@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: sans-serif
 }
 
 a {
@@ -15,8 +15,7 @@ a {
 header {
     background-image: url(../img/ic.png);
     color: white;
-    font-family: 'Courier New', Courier, monospace;
-    /* height: 10rem; */
+    margin-bottom: 1rem;
 }
 
 header hgroup {
@@ -38,6 +37,7 @@ header nav ul li {
     padding: .5rem;
     background-color: black;
     color: white;
+    font-weight: bold;
 
     margin: .7rem;
     
@@ -60,22 +60,14 @@ header .mark:hover {
 
 main {
     display: flex;
-    justify-content: center;
-}
-
-main section {
-    display: inline-block;
-    /* margin-left: 1rem;
-    margin-right: 1rem; */
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: auto;
-    margin-top: 1rem;
-    width: 31%;
+    justify-content: stretch;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 1rem;
+    gap: 1rem;
 }
 
 main section h2 {
-    color: white;
     margin-bottom: 5px;
 }
 
@@ -87,6 +79,28 @@ main section nav a {
 
     padding-left: .3rem;
     padding-right: .3rem;
+    padding-top:  .3rem;
+}
+#html5, #css3, #about {
+    /* display: inline-block; */
+    /* margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: 1rem; */
+    margin-top: 0rem;
+    max-width: 33%;
+    flex-grow: 1;
+}
+
+#html5 h2, #css3 h2, #about h2 {
+    display: inline-block;
+    padding-right: 0.5rem;
+    padding-left: 0.1rem;
+    color: white;
+}
+#html5 p, #css3 p, #about p {
+    padding-left: 3px;
+    padding-right: 3px;
 }
 
 #html5 {
@@ -95,9 +109,6 @@ main section nav a {
 
 #html5 h2 {
     background-color: red;
-    display: inline-block;
-    padding-right: 0.5rem;
-    color: white;
 }
 
 #css3 {
@@ -106,9 +117,6 @@ main section nav a {
 
 #css3 h2 {
     background-color: green;
-    display: inline-block;
-    padding-right: 0.5rem;
-    color: white;
 }
 
 #about {
@@ -117,14 +125,6 @@ main section nav a {
 
 #about h2 {
     background-color: blue;
-    display: inline-block;
-    padding-right: 0.5rem;
-    color: white;
-}
-
-/* Main Article */
-article {
-    padding: 12px;
 }
 
 /* Main Article Table */
@@ -155,24 +155,24 @@ article table td {
     padding: 12px 15px;
 }
 
+/* About page */
+#omText {
+    max-width: 400px;
+}
+
+#omFakta {
+    padding: 5px;
+    padding-right: 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+#omFakta p {
+    margin-left: .5rem;
+    margin-bottom: 5px;
+}
 
 /* Footer  */
-/* footer {
-    display: flex;
-    background-color: black;
-    color: white;
-    width: 100%;
-}
-
-footer nav{
-    justify-content: right;
-    align-items: center;
-    width: 10vw;
-}
-
-footer address{
-    width: 90vw;
-} */
 
 footer {
     margin-top: 2rem;
@@ -187,10 +187,12 @@ footer {
 
 footer nav {
     float: right;
+    margin-right: 7px;
 }
 
 footer address {
     float: left;
+    margin-left: 7px;
 }
 
 /* Footer Nav */
